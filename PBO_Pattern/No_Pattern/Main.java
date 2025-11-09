@@ -8,15 +8,15 @@ public class Main {
     private final ArrayList<Product> productList = new ArrayList<>();
     private final Scanner scanner =  new Scanner(System.in);
 
-    public Main(){
-        productList.add(new Product(1, "Laptop", 9500000));
-        productList.add(new Product(2, "Smartphone", 2500000));
-    }
-
     public static void main(String[] args) {
         Main app = new Main();
         app.startMenuLoop();
         app.scanner.close();
+    }
+
+    public Main(){
+        productList.add(new Product(1, "Laptop", 9500000));
+        productList.add(new Product(2, "Handphone", 2500000));
     }
 
     public void startMenuLoop(){
